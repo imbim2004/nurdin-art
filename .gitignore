@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+*.local
+
+# Env files — never commit keys
+.env
+.env.local
+.env.*.local
+*.secret
+
+# Editor / OS
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Vite
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# Claude Code local state
+.claude/
+
+# Playwright MCP artifacts (screenshots, sessions, logs)
+.playwright-mcp/
+playwright-report/
+test-results/
+
+# Generated screenshots from dev/QA
+*.png
+*.jpeg
+# …but keep production assets under public/
+!public/**/*.png
+!public/**/*.jpg
+!public/**/*.jpeg
+!public/**/*.webp
+!public/**/*.svg
